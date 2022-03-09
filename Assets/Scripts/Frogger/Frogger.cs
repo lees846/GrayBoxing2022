@@ -16,9 +16,13 @@ public class Frogger : MonoBehaviour
     {
        if(Input.GetKeyDown(KeyCode.W))
        {
-           print("W key was pressed");
+        //    print("W key was pressed");
         //    Debug.Log("W key was pressed");
            transform.Translate(Vector3.forward * SteppingSize);
+       }
+       if(Input.GetKeyDown(KeyCode.S))
+       {
+           transform.Translate(Vector3.back * SteppingSize);
        }
     }
 }
