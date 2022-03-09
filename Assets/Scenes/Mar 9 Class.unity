@@ -213,7 +213,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 351606827}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -5.23, z: 0}
   m_LocalScale: {x: 50, y: 0.3, z: 50}
   m_Children: []
   m_Father: {fileID: 0}
@@ -460,6 +460,8 @@ MonoBehaviour:
   amplitude: 2
   frequency: 0.05
   offset: 1
+  speed: 0.03
+  height: 2
 --- !u!135 &1805200318
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -570,7 +572,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 2
   frequency: 0.03
-  offset: 0
+  offset: 0.5
+  speed: 0.03
+  height: 2
 --- !u!135 &1846021435
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -641,7 +645,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1846021433}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.09, y: 3, z: 0}
+  m_LocalPosition: {x: -7.09, y: 3, z: -3.59}
   m_LocalScale: {x: 2.6316, y: 2.6316, z: 2.6316}
   m_Children: []
   m_Father: {fileID: 0}
@@ -682,6 +686,8 @@ MonoBehaviour:
   amplitude: 2
   frequency: 0.03
   offset: 0
+  speed: 0.03
+  height: 2
 --- !u!135 &1893320996
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -752,7 +758,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893320994}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.04, y: 3, z: 0}
+  m_LocalPosition: {x: 7.04, y: 3, z: -3.59}
   m_LocalScale: {x: 2.6316, y: 2.6316, z: 2.6316}
   m_Children: []
   m_Father: {fileID: 0}
