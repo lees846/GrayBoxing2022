@@ -21,8 +21,16 @@ public class LillyPadCar : MonoBehaviour
        transform.Translate(Vector3.left * speed * Time.deltaTime); 
 
        // Loop to the original pisition if we pass the side of teh road
-       if(transform.position.x < 1.6f){
-           transform.position = _startingPosition;
-       }
+    //    if(transform.position.x < 1.6f){
+    //        transform.position = _startingPosition;
+    //    }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        // reset position if we collide with the wall
+        if (other.gameObject.name == "Wall" || other.gameObject.CompareTag("Wall"))
+        {
+            transform.position = _startingPosition;
+        } 
     }
 }
