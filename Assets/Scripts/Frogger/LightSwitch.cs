@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class LightSwitch : MonoBehaviour
 {
+    public Color changeLightColor;
     public Light myLight;
     // Start is called before the first frame update
     void Start()
     {
         // start with the light off
         myLight.enabled = false;
+        gameObject.GetComponent<LightSwitch>().myLight.color = changeLightColor;
     }
 
     void OnTriggerEnter(Collider other) {

@@ -36,7 +36,7 @@ public class Frogger : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        print($"Collision with {other.gameObject.name}");
+        // print($"Collision with {other.gameObject.name}");
         // reset position if we collide with the wall
         if (other.gameObject.name == "Wall" || other.gameObject.CompareTag("Obstacle"))
         {
@@ -51,7 +51,7 @@ public class Frogger : MonoBehaviour
             // 2. Reference its Game Object that's attached to the collision
             // 3. Use GetComponent<>() to access the LightSwitch script
             // 4. USe the LightSwitch script's myLight variable to change the light color
-            other.gameObject.GetComponent<LightSwitch>().myLight.color = Color.blue;
+            // other.gameObject.GetComponent<LightSwitch>().myLight.color = Color.blue;
       
             // Can also make a new script and apply to light
 
