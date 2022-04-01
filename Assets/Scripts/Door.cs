@@ -25,7 +25,7 @@ public class Door : MonoBehaviour
             myAudioSource.Play();
 
             // when triggered, rotate the door from the hinge
-            transform.Rotate(0, -90, 0);
+            transform.Rotate(0, 0, -90);
 
         }
     }
