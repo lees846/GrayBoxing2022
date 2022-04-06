@@ -8,6 +8,8 @@ public class SceneController : MonoBehaviour
     public string sceneToLoad;
     public Animator UIFade;
 
+    public string AnimationToPlay;
+
     void Update() 
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -28,7 +30,7 @@ public class SceneController : MonoBehaviour
     // This is a coroutine - timeout within the function
     IEnumerator PlayTransition()
     {
-        UIFade.SetTrigger("Start");
+        UIFade.SetTrigger(AnimationToPlay);
         // Yield allows code to wait for the duration of the animation
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(sceneToLoad);

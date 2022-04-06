@@ -1214,6 +1214,10 @@ PrefabInstance:
       propertyPath: UIFade
       value: 
       objectReference: {fileID: 1898773042}
+    - target: {fileID: 8943017090803661872, guid: 17ab6fcdf379a4949bd6a798f1ce2e53, type: 3}
+      propertyPath: AnimationToPlay
+      value: Start
+      objectReference: {fileID: 0}
     - target: {fileID: 8943017090803661873, guid: 17ab6fcdf379a4949bd6a798f1ce2e53, type: 3}
       propertyPath: m_RootOrder
       value: 2
